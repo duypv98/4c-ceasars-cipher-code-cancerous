@@ -1,0 +1,49 @@
+body{
+    background: url('../src/bground.jpg');
+}
+.blur{
+    opacity: 0.7;
+}
+.inline-title{
+    display: inline;
+}
+#shift-key{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+p.title{
+    font-family: MTO Dom;
+    font-size: 25px;
+}
+.buttonWrapper{
+    text-align: center;
+}
+.button{
+    position: absolute;
+    top: 50%;
+}
+button{
+    width: 250px;
+    margin: 10px 10px 10px 10px;
+    height: 70px;
+    display: table-cell;
+    vertical-align: center;
+}
+#resultText{
+    width: 60%;
+    height: 300px;
+    margin: auto;
+    padding: 10px;
+    border: 5px solid #000000;
+    border-radius: 2px;
+    background: whitesmoke;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: violet;
+    color: #ffffff;
+    height: 50px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Cancerous Cipher Code</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/plugin.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="https://github.com/duypv98/4c-ceasars-cipher-code-cancerous">
+            <img src="src/logo.jpg" alt="Logo" style="width: 50px;" />
+        </a>
+        <span class="navbar-text"><h4>Cancerous Ceasar's Code</h4></span>
+    </nav>
+    <div class="jumbotron jumbotron-fluid blur">
+        <div class="container">
+            <h1 class="title">Ceasar's Cipher Code</h1>
+            <p class="title">Encoding/Decoding and make text cancerous :)</p>
+        </div>
+    </div>
+    <!-- Body -->
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-5">
+
+            <div class="input-area">
+                <span>
+                    <h2 class="inline-title" style="color: red;">Encode</h2>
+                    <h2 class="inline-title">||</h2>
+                    <h2 class="inline-title" style="color: blue;">Decode</h2>
+                </span>
+            </div>
+
+            <form>
+                <div class="form-group">
+                    <label for="input-text" style="color: white;"><b>Plain Text/Cipher Text:</b></label>
+                    <textarea class="form-control" row="100" id="input-text"></textarea>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-5">
+            <div id="result-area"><h2 class="inline-title" style="color:gray">Result</h2></div>
+
+            <form>
+                <div class="form-group">
+                    <label for="plaintxt" style="color: white">
+                        <b id="format-text">Normal</b>
+                    </label>
+                    <textarea class="form-control" row="100" id="result-text" readonly="readonly"></textarea>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <label for="shift-key"><b>The Shift:</b></label>
+            <input id="shift-key" type="text" value="0" readonly="readonly"/>
+            <input type="range" min="-26" max="26" step="1" class="custom-range" onchange="UpdateShiftKey(this.value)" />
+
+            <div class="form-group">
+                <label for="choice">Encode or Decode ?</label>
+                <select name="choice" id="choice" class="form-control">
+                    <option value="encode">Encode</option>
+                    <option value="decode">Decode</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+    </div>
+    <div class="buttonWrapper">
+        <button type="button" class="btn btn-primary btn-lg" onclick="window.location.reload()">Reset</button>
+        <button type="button" class="btn btn-primary btn-lg" onclick="GetCode()">Encode/Decode</button>
+        <button type="button" class="btn btn-primary btn-lg" onclick="Cancerous()">F*ck Text</button>
+    </div>
+
+    <footer class="blur">Version 2.0 - 2019 Feb</footer>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
