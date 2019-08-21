@@ -3,6 +3,7 @@ const inputText = document.getElementById('input-text');
 const resultText = document.getElementById('result-text');
 const format = document.getElementById('format-text');
 const eodChoice = document.getElementById('choice');
+const key = document.getElementById('key');
 
 function updateShiftKey(val){
     theKey.value = val;
@@ -117,5 +118,5 @@ function resetValue(){
     resultText.value = "";
     theKey.value = 0;
     updateShiftKey(0);
-    document.getElementById('key').value = 0;
+    key.value = 0;
 }
