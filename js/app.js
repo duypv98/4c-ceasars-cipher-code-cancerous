@@ -115,4 +115,7 @@ function change(str){
 function resetValue(){
     inputText.value = "";
     resultText.value = "";
+    theKey.value = 0;
+    updateShiftKey(0);
+    document.getElementById('key').value = 0;
 }
