@@ -1,22 +1,22 @@
 const theKey = document.getElementById('shift-key');
 const inputText = document.getElementById('input-text');
-const result = document.getElementById('result-text');
+const resultText = document.getElementById('result-text');
 const format = document.getElementById('format-text');
 const eodChoice = document.getElementById('choice');
 
-function UpdateShiftKey(val){
+function updateShiftKey(val){
     theKey.value = val;
 }
-function GetCode(){
+function getCode(){
     let eod = eodChoice.value;
     if (eod == 'encode'){
-        Encode();
+        encode();
     }
     else{
-        Decode();    }
+        decode();    }
 }
 
-function Encode(){
+function encode(){
     const shiftKey = parseInt(theKey.value);
     const txt = inputText.value;
     let x = [];
@@ -51,11 +51,11 @@ function Encode(){
         }
     }
     let _res = String.fromCharCode.apply(null,x);
-    result.value = _res;
+    resultText.value = _res;
     format.innerHTML = 'Normal';
 }
 
-function Decode(){
+function decode(){
     let shiftKey = parseInt(theKey.value);
     shiftKey *= -1;
     let txt = inputText.value;
@@ -92,17 +92,17 @@ function Decode(){
         }
     }
     let _res = String.fromCharCode.apply(null,x);
-    result.value = _res;
+    resultText.value = _res;
     format.innerHTML = 'Normal';
 }
 
-function Cancerous(){
-    let tmp = result.value;
-    result.value = Change(tmp);
+function cancerous(){
+    let tmp = resultText.value;
+    resultText.value = change(tmp);
     format.innerHTML = 'Cancerous';
 }
 
-function Change(str){
+function change(str){
     let cancerousStr = str.toLowerCase().split('');
     for (let i = 0; i < cancerousStr.length; i++){
         if (i % 2 != 0){
@@ -110,4 +110,9 @@ function Change(str){
         }
     }
     return cancerousStr.join('');
+}
+
+function resetValue(){
+    inputText.value = "";
+    resultText.value = "";
 }
