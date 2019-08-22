@@ -1,3 +1,3 @@
-# 4c-ceasars-cipher-code-cancerous
-Encoding/Decoding and Making Stylist Text.
-GitHub Page: https://duypv98.github.io/4c-ceasars-cipher-code-cancerous/
+# styling-ceasars-cipher
+Encoding/Decoding with Ceasar's Cipher and Making Stylist Text.
+GitHub Page: [SCC](https://duypv98.github.io/styling-ceasars-cipher/)
