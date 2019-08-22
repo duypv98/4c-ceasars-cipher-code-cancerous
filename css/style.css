@@ -5,6 +5,7 @@ html, body {
 
 body {
     background: url('../src/bground.jpg');
+    overflow-x: hidden;
 }
 
 .blur {
