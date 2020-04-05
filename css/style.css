@@ -8,6 +8,10 @@ body {
     overflow-x: hidden;
 }
 
+label {
+    color: #FFFFFF;
+}
+
 .blur {
     opacity: 0.7;
 }
